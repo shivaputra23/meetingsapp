@@ -10,6 +10,10 @@ import { BookingformComponent } from './bookings/bookingform/bookingform.compone
 import { BookingsComponent } from './bookings/bookings/bookings.component';
 import { RoomsComponent } from './rooms/rooms/rooms.component';
 import { RoomsformComponent } from './rooms/roomsform/roomsform.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -19,14 +23,18 @@ import { RoomsformComponent } from './rooms/roomsform/roomsform.component';
     BookingformComponent,
     BookingsComponent,
     RoomsComponent,
-    RoomsformComponent
+    RoomsformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule,
+    MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

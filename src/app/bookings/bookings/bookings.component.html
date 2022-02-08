@@ -1,1 +1,21 @@
-<p>bookings works!</p>
+<mat-grid-list cols="4" rowHeight="200px" style="padding: 10px">
+  <mat-grid-tile [colspan]="3" [rowspan]="1">
+    <mat-card class="example-card">
+      <mat-card-title>Meeting Title</mat-card-title>
+      <mat-card-subtitle>Meeting Strength </mat-card-subtitle>
+      <mat-card-content>
+        <p>
+          Meeting timings: From: 00:00:00 00:00:0000 - To: 00:00:00 00:00:0000
+        </p>
+        <!-- <p>{{ longText }}</p> -->
+      </mat-card-content>
+      <!-- <mat-divider inset></mat-divider> -->
+      <mat-card-actions>
+        <button mat-raised-button>Cancle</button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
