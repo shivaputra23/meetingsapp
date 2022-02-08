@@ -4,10 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './users/signup/signup.component';
+import { LoginComponent } from './users/login/login.component';
+import { BookingformComponent } from './bookings/bookingform/bookingform.component';
+import { BookingsComponent } from './bookings/bookings/bookings.component';
+import { RoomsComponent } from './rooms/rooms/rooms.component';
+import { RoomsformComponent } from './rooms/roomsform/roomsform.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignupComponent,
+    LoginComponent,
+    BookingformComponent,
+    BookingsComponent,
+    RoomsComponent,
+    RoomsformComponent
   ],
   imports: [
     BrowserModule,
